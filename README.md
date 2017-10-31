@@ -10,4 +10,4 @@ When passing a view into the dialog we then use Paint and PorterDuff modes to "c
 
 
 
-![solarized vim](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
+![Step One](https://github.com/dejami-ASill/OnBoardingLib/blob/master/Step_one_ob.png)
