@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity{
 
     /**
      *
-     * This is just a simple method for building our predefined animation. Feel free to use whatever you want.
+     * This is just a simple method for building our predefined animation. Feel free to use whatever you want here or nothing at all
      *
      * @param doRepeat - whether or not the animation should be repeated indefinitely
      * @return - The built animation to attach to your target view
