@@ -1,9 +1,23 @@
 <resources>
     <string name="app_name">OnBoarding</string>
-    <string name="title_home">Home</string>
+    <string name="title_lets_begin">Lets Begin</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
 
     <string name="onboarding_do_later"><u>I\'ll do this later</u></string>
+
+    <string name="onboarding_step_one_header">Welcome to the Onboarding Demo!</string>
+
+    <string name="onboarding_step_one_content">Teach your users how to use your app by following along!</string>
+
+    <string name="onboarding_step_two_header">Check the Image Bouncing Now!</string>
+
+    <string name="onboarding_step_three_header">By This Point You Get The Idea!</string>
+
+    <string name="next_text">Next!</string>
+
+    <string name="one_more">Once More!</string>
+
+
 </resources>

@@ -30,10 +30,39 @@ public class OnboardingDialog extends AbstractOnboardingDialog {
 
         setContentView(R.layout.dialog_onboarding);
 
+        rlMain = (OnboardingRelativeLayout)findViewById(R.id.modal_main);
+        rlMain.setBackgroundEraser(getContext().getColor(R.color.white_95));
+
 
         mHeaderView = (TextView)findViewById(R.id.text_1);
         mContentView = (TextView)findViewById(R.id.text_2);
         mSkipText = (TextView)findViewById(R.id.skip_text);
 
     }
+
+
+    @Override
+    public void onStart(){
+        super.onStart();
+
+        if(mTargetPosition != null) {
+            rlMain.setTitlebar(mShowingTitleBar);
+            rlMain.setEraserShape(mTargetShape);
+            rlMain.setRect(mTargetPosition);
+            rlMain.setListener(TOUCH_LISTENER);
+        }
+
+        if(mHeaderText != null){
+            mHeaderView.setText(mHeaderText);
+        }
+
+        if(mContentText != null){
+            mContentView.setText(mContentText);
+        }
+
+
+        rlMain.useTargetPadding(mUseTargetPadding);
+
+    }
+
 }

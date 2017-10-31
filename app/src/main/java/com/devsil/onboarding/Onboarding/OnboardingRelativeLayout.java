@@ -17,6 +17,15 @@ import com.devsil.onboarding.Screen.ScreenDimensions;
  */
 
 
+/**
+ * This is a custom RelativeLayout View that allows for a Rect() to be passed to it.
+ * This Rect is meant to be the position of a view you are trying to direct the user towards.
+ *
+ * This View is typically used to cover the full screen as to block the user from doing anything until they take the desired action.
+ * The desired action/button/view Rect can be passed to this class which will "cut" a whole in the background using Paint and PorterDuff Modes
+ * so that the desired button can be seen and interacted with.
+ */
+
 public class OnboardingRelativeLayout extends RelativeLayout {
 
     public static final int RECT = 1;

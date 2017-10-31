@@ -19,6 +19,14 @@ import com.devsil.onboarding.Screen.ScreenDimensions;
  * Created by devsil on 10/31/2017.
  */
 
+
+/**
+ * This is an extended Alert Dialog meant to be extended by your specific Dialog.
+ *
+ * This class keeps track of colors/target views/ Rects and which or not you want to pass the buttons click along back to your activity/fragment.
+ *
+ * Please see OnboardingRelativeLayout.java for more information on how this is done.
+ */
 public class AbstractOnboardingDialog extends AlertDialog {
     protected static final String TAG  = "Debug.OnBoardDialog";
 
@@ -90,9 +98,6 @@ public class AbstractOnboardingDialog extends AlertDialog {
         }
     };
     long mDismissTime = 0;
-
-    boolean useConfetti = false;
-
 
     protected boolean mShowSkip = false;
     protected View.OnClickListener mSkipListener = null;
@@ -211,6 +216,7 @@ public class AbstractOnboardingDialog extends AlertDialog {
         mTargetPosition = new Rect();
 
         mTarget.getGlobalVisibleRect(mTargetPosition);
+        Log.d(TAG,"Target Rect: " +mTargetPosition.toString());
 
         if((mTarget instanceof TextView) && mGlowColor != -1 ){
             ((TextView) mTarget).setShadowLayer(10,0,0,mGlowColor);
@@ -488,9 +494,6 @@ public class AbstractOnboardingDialog extends AlertDialog {
         this.mAnimationAssetPath = path;
     }
 
-    public void setUseConfetti(boolean useConfetti){
-        this.useConfetti = useConfetti;
-    }
 
     public void dismiss(){
         super.dismiss();
