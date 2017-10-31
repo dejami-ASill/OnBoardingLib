@@ -9,4 +9,5 @@ The Dialog is meant to cover the entire screen but allows for up to 4 views to b
 When passing a view into the dialog we then use Paint and PorterDuff modes to "cut"/"erase" a whole in the Dialogs background. This allows for the underlying view (which was passed to the dialog) to be shown through the dialog itself thus blocking the user from doing anything else on the screen until they complete the desired action.
 
 
-![Alt text](/Steo_one_ob.png?raw=true "Step One")
+
+![solarized vim](https://github.com/altercation/solarized/raw/master/img/solarized-vim.png)
