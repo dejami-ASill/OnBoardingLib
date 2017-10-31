@@ -11,3 +11,5 @@ When passing a view into the dialog we then use Paint and PorterDuff modes to "c
 
 
 ![Step One](https://github.com/dejami-ASill/OnBoardingLib/blob/master/Step_one_ob.png)
+
+![Step Two](https://github.com/dejami-ASill/OnBoardingLib/blob/master/Step_two_ob.png)
