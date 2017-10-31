@@ -1,5 +1,6 @@
 # OnBoardingLib
 A simple project to make building user on-boarding screens a little less painful.
+Yes I understand that the Color Scheme is ugly, I decided to go with full visibility to demonstrate, wasn't concerned with the look on this one.
 
 
 The main focus of this project are the AbstractOnboardingDialog.java and the OnboardingRelativeLayout.java classes. 
